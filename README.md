@@ -1,9 +1,7 @@
 # Motu Maven Repository
 
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
-![GitHub License](https://img.shields.io/github/license/doraeven/commons)
-
-Motu Maven Repository (releases + snapshots).
+![GitHub License](https://img.shields.io/github/license/doraeven/repository)
 
 ## Introduction
 
