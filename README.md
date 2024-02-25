@@ -3,6 +3,8 @@
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)
 ![GitHub License](https://img.shields.io/github/license/doraeven/repository)
 
+The main branch maven (releases + snapshots).
+
 ## Introduction
 
 We set up a repository on github to store the jar packages we publish.
