@@ -32,26 +32,25 @@
         <maven.test.skip>false</maven.test.skip>
 
         <!-- repositories url -->
-        <repository.aliyun.url>https://maven.aliyun.com/repository/public/</repository.aliyun.url>
         <repository.central.url>https://repo.maven.apache.org/maven2/</repository.central.url>
+        <repository.central1.url>https://repo1.maven.org/maven2/</repository.central1.url>
 
-        <!-- update in 20260718 -->
+        <!-- update in 20261120 -->
         <!-- plugins version -->
         <!-- https://maven.apache.org/plugins/ -->
         <!-- core -->
         <maven-clean-plugin.version>3.5.0</maven-clean-plugin.version>
-        <maven-compiler-plugin.version>3.15.0</maven-compiler-plugin.version>
-        <maven-deploy-plugin.version>3.1.4</maven-deploy-plugin.version>
-        <maven-failsafe-plugin.version>3.6.0-M1</maven-failsafe-plugin.version>
-        <maven-install-plugin.version>3.1.4</maven-install-plugin.version>
+        <maven-compiler-plugin.version>3.16.0</maven-compiler-plugin.version>
+        <maven-deploy-plugin.version>3.2.0</maven-deploy-plugin.version>
+        <maven-failsafe-plugin.version>3.6.1</maven-failsafe-plugin.version>
+        <maven-install-plugin.version>3.2.0</maven-install-plugin.version>
         <maven-resources-plugin.version>3.5.0</maven-resources-plugin.version>
         <maven-site-plugin.version>3.22.0</maven-site-plugin.version>
-        <maven-surefire-plugin.version>3.6.0-M1</maven-surefire-plugin.version>
-        <maven-verifier-plugin.version>1.1</maven-verifier-plugin.version>
+        <maven-surefire-plugin.version>3.6.1</maven-surefire-plugin.version>
         <!-- packaging -->
         <maven-ear-plugin.version>3.4.0</maven-ear-plugin.version>
         <maven-ejb-plugin.version>3.3.0</maven-ejb-plugin.version>
-        <maven-jar-plugin.version>3.5.0</maven-jar-plugin.version>
+        <maven-jar-plugin.version>3.5.1</maven-jar-plugin.version>
         <maven-rar-plugin.version>3.1.0</maven-rar-plugin.version>
         <maven-war-plugin.version>3.5.1</maven-war-plugin.version>
         <maven-acr-plugin.version>3.2.0</maven-acr-plugin.version>
@@ -63,34 +62,33 @@
         <maven-changelog-plugin.version>3.0.0-M2</maven-changelog-plugin.version>
         <maven-changes-plugin.version>3.0.0-M3</maven-changes-plugin.version>
         <maven-checkstyle-plugin.version>3.6.0</maven-checkstyle-plugin.version>
-        <maven-doap-plugin.version>3.0.0-M1</maven-doap-plugin.version>
+        <maven-doap-plugin.version>3.0.0-M2</maven-doap-plugin.version>
         <maven-javadoc-plugin.version>3.12.0</maven-javadoc-plugin.version>
         <maven-jdeps-plugin.version>3.2.0</maven-jdeps-plugin.version>
         <maven-jxr-plugin.version>3.6.0</maven-jxr-plugin.version>
         <maven-pmd-plugin.version>3.28.0</maven-pmd-plugin.version>
-        <maven-plugin-report-plugin.version>3.15.2</maven-plugin-report-plugin.version>
+        <maven-plugin-report-plugin.version>3.16.0</maven-plugin-report-plugin.version>
         <maven-project-info-reports-plugin.version>3.9.0</maven-project-info-reports-plugin.version>
-        <maven-surefire-report-plugin.version>3.6.0-M1</maven-surefire-report-plugin.version>
+        <maven-surefire-report-plugin.version>3.6.1</maven-surefire-report-plugin.version>
         <!-- tools -->
         <maven-antrun-plugin.version>3.2.0</maven-antrun-plugin.version>
-        <maven-artifact-plugin.version>3.6.1</maven-artifact-plugin.version>
+        <maven-artifact-plugin.version>3.7.0</maven-artifact-plugin.version>
         <maven-archetype-plugin.version>3.4.1</maven-archetype-plugin.version>
         <maven-assembly-plugin.version>3.8.0</maven-assembly-plugin.version>
         <maven-dependency-plugin.version>3.11.0</maven-dependency-plugin.version>
-        <maven-enforcer-plugin.version>3.6.3</maven-enforcer-plugin.version>
+        <maven-enforcer-plugin.version>3.7.0</maven-enforcer-plugin.version>
         <maven-gpg-plugin.version>3.2.8</maven-gpg-plugin.version>
-        <maven-help-plugin.version>3.5.1</maven-help-plugin.version>
+        <maven-help-plugin.version>3.6.0</maven-help-plugin.version>
         <maven-invoker-plugin.version>3.10.1</maven-invoker-plugin.version>
         <maven-jarsigner-plugin.version>3.1.0</maven-jarsigner-plugin.version>
         <maven-jdeprscan-plugin.version>3.0.0</maven-jdeprscan-plugin.version>
-        <maven-plugin-plugin.version>3.15.2</maven-plugin-plugin.version>
+        <maven-plugin-plugin.version>3.16.0</maven-plugin-plugin.version>
         <maven-release-plugin.version>3.3.1</maven-release-plugin.version>
         <maven-remote-resources-plugin.version>3.3.0</maven-remote-resources-plugin.version>
         <maven-scm-plugin.version>2.2.1</maven-scm-plugin.version>
         <maven-scm-publish-plugin.version>3.3.0</maven-scm-publish-plugin.version>
         <maven-scripting-plugin.version>3.1.0</maven-scripting-plugin.version>
-        <maven-stage-plugin.version>1.0</maven-stage-plugin.version>
-        <maven-toolchains-plugin.version>3.2.0</maven-toolchains-plugin.version>
+        <maven-toolchains-plugin.version>3.3.0</maven-toolchains-plugin.version>
         <maven-wrapper-plugin.version>3.3.4</maven-wrapper-plugin.version>
 
         <!-- extend plugins -->
@@ -99,28 +97,28 @@
     <!-- repositories -->
     <repositories>
         <repository>
-            <id>aliyun</id>
-            <name>Aliyun Repository</name>
-            <url>${repository.aliyun.url}</url>
-        </repository>
-        <repository>
             <id>central</id>
             <name>Central Repository</name>
             <url>${repository.central.url}</url>
+        </repository>
+        <repository>
+            <id>central1</id>
+            <name>Central Repository1</name>
+            <url>${repository.central1.url}</url>
         </repository>
     </repositories>
 
     <!-- plugin repositories -->
     <pluginRepositories>
         <pluginRepository>
-            <id>aliyun</id>
-            <name>Aliyun Repository</name>
-            <url>${repository.aliyun.url}</url>
-        </pluginRepository>
-        <pluginRepository>
             <id>central</id>
             <name>Central Repository</name>
             <url>${repository.central.url}</url>
+        </pluginRepository>
+        <pluginRepository>
+            <id>central1</id>
+            <name>Central Repository1</name>
+            <url>${repository.central1.url}</url>
         </pluginRepository>
     </pluginRepositories>
 
@@ -198,12 +196,6 @@
                     <configuration>
                         <skipTests>${maven.test.skip}</skipTests>
                     </configuration>
-                </plugin>
-                <!-- maven-verifier -->
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-verifier-plugin</artifactId>
-                    <version>${maven-verifier-plugin.version}</version>
                 </plugin>
 
                 <!-- packaging -->
@@ -505,11 +497,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
             </plugin>
-            <!-- maven-verifier -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-verifier-plugin</artifactId>
-            </plugin>
 
             <!-- packaging -->
             <!-- maven-ear -->
@@ -705,11 +692,6 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-scripting-plugin</artifactId>
-            </plugin>
-            <!-- maven-stage -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-stage-plugin</artifactId>
             </plugin>
             <!-- maven-toolchains -->
             <plugin>
